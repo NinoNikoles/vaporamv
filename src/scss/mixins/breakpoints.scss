@@ -1,0 +1,24 @@
+$breakpoint-small: rem-calc(0);
+$breakpoint-medium: rem-calc(640);
+$breakpoint-large: rem-calc(1024);
+$breakpoint-xlarge: rem-calc(1200);
+$breakpoint-xxlarge: rem-calc(1440);
+
+@mixin breakpoint($point) {
+    @if $point == small {
+        @media (min-width: $breakpoint-small) { @content ; }
+    }
+    @else if $point == medium {
+        @media (min-width: $breakpoint-medium) { @content ; }
+    }
+    @else if $point == large {
+        @media (min-width: $breakpoint-large) { @content ; }
+    }
+    @else if $point == x-large {
+        @media (min-width: $breakpoint-xlarge)  { @content ; }
+    }
+    @else if $point == xx-large {
+        @media (max-width: $breakpoint-xxlarge)  { @content ; }
+
+    }
+}

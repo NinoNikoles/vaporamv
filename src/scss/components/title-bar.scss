@@ -1,0 +1,51 @@
+.title-bar {
+    background: none;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    z-index: 1;
+    padding: {
+        top: 0;
+        right: rem-calc($normal-space);
+        bottom: 0;
+        left: rem-calc($normal-space);
+    };
+    .menu-icon-container {
+        width: 100%;
+        max-width: 33.33333%;
+    }
+
+    .menu {
+        background: none;
+        width: 100%;
+        max-width: 33.33333%;
+        text-align: right;
+        p {
+            margin: 0;
+            width: 100%;
+            text-shadow: 0 0 rem-calc(16) $black;
+        }
+    }
+
+    .menu-icon {
+        margin: 0;
+        width: rem-calc(28);
+        height: rem-calc($normal-space);
+    }
+
+    .logo-container {
+        text-align: center;
+        width: 100%;
+    }
+
+    .logo {
+        display: inline-block;
+        width: 100%;
+        min-width: rem-calc(127.72);
+        img {
+            height: rem-calc(76);
+            width: auto;
+        }
+    }
+}

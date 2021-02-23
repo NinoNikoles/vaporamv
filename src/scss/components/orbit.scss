@@ -1,0 +1,22 @@
+.orbit {
+    &-slide {
+        padding: {
+            top: rem-calc($normal-space);
+            bottom: rem-calc($normal-space);
+            right: rem-calc($xlarge-space);
+            left: rem-calc($xlarge-space);
+        }
+        @include breakpoint(medium) {
+            padding: {
+                top: rem-calc($large-space);
+                bottom: rem-calc($large-space);
+            }
+        }
+        @include breakpoint(large) {
+            padding: {
+                top: rem-calc($xxlarge-space);
+                bottom: rem-calc($xxlarge-space);
+            }
+        }
+    }
+}

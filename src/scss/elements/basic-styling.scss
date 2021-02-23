@@ -1,0 +1,86 @@
+//Body
+body {
+    font-family: 'Roboto', sans-serif;
+    word-break: break-word;
+
+    header {
+        margin: 0;
+        position: relative;
+    }
+}
+
+//Font
+h1,.h1 {
+    text: {
+        transform: uppercase;
+    }
+}
+
+h1 {
+    &.headline {
+        margin-bottom: 0;
+        @include breakpoint(medium) {
+            font-size: rem-calc($font-size-large);
+        }
+
+        @include breakpoint(large) {
+            font-size: rem-calc($font-size-xlarge);
+        }
+    }
+}
+
+
+p {
+    font-size: rem-calc($font-size-normal);
+    margin: {
+        bottom: 0;
+    }
+}
+
+.p {
+    margin: {
+        bottom: 0;
+    }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    color: $black;
+}
+
+h1,.h1,
+h2,.h2,
+h3,.h3,
+h4,.h4,
+h5,.h5,
+h6,h6,
+p,.p,
+a,.a {
+    font-family: 'Roboto', sans-serif;
+}
+
+a {
+    color: $primary-color;
+    font-size: rem-calc($font-size-normal);
+}
+
+
+form {
+    margin: {
+        right: rem-calc(-16);
+        left: rem-calc(-16);
+    };
+}
+
+* {
+    &:hover,
+    &:focus,
+    &:active {
+        outline: none;
+    }
+}

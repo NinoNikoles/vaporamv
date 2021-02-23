@@ -1,0 +1,42 @@
+.video-list {
+  margin: 0 auto;
+
+  .video-list-item {
+    margin-bottom: rem-calc($medium-space);
+    padding: 0 rem-calc(2);
+    width: 100%;
+
+    .video-link {
+      display: inline-block;
+    }
+
+    img {
+      -webkit-filter: brightness(100%);
+      filter: brightness(100%);
+      transition: -webkit-filter .2s ease;
+      transition: filter .2s ease;
+      transition: filter .2s ease,-webkit-filter .2s ease;
+    }
+
+    h3 {
+      color: $black;
+      font-size: rem-calc($font-size-normal);
+      font-weight: 500;
+      padding-top: rem-calc($small-space);
+      margin: 0;
+    }
+
+    &:hover,
+    &:focus,
+    &:active {
+      img {
+        -webkit-filter: brightness(125%);
+        filter: brightness(125%);
+      }
+    }
+  }
+}
+
+.video-list-item-container {
+  flex-wrap: wrap;
+}

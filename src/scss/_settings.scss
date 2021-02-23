@@ -1,0 +1,35 @@
+//Colors
+$transparent: transparent;
+
+$black: #000001;
+$white: #ffffff;
+
+$gray: gray;
+$light-gray: lighten($gray, 46%);
+$dark-gray: darken($gray, 20%);
+
+$green: #93d522;
+$pink: #fe48a6;
+
+$primary-color: #29d5ff;
+$secondary-color: #6c03a8;
+
+$alert: yellow;
+$warning: #ff0000;
+$success: $green;
+
+//Font
+$font-size-small: 12;
+$font-size-normal: 16;
+$font-size-medium: 24;
+$font-size-large: 32;
+$font-size-xlarge: 48;
+$font-size-xxlarge: 64;
+
+//Spacing
+$small-space: 8;
+$normal-space: 16;
+$medium-space: 24;
+$large-space: 32;
+$xlarge-space: 48;
+$xxlarge-space: 64;

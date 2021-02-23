@@ -1,0 +1,66 @@
+.row {
+	display: flex;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	flex-flow: row wrap;
+	-ms-flex-flow: row wrap;
+	max-width: rem-calc(1200);
+	margin: {
+		top: 0;
+		bottom: 0;
+		right: auto;
+		left: auto;
+	};
+}
+
+.column {
+	flex-grow: 1;
+	flex-shrink: 1;
+	flex-basis: 0px;
+	padding: {
+		top: 0;
+		bottom: 0;
+		right: rem-calc($normal-space);
+		left: rem-calc($normal-space);
+	}
+	
+	@include breakpoint(small) {
+		@include grid-generator(small, 12);
+	}
+	
+	@include breakpoint(medium) {
+		@include grid-generator(medium, 12);
+	}
+	
+	@include breakpoint(large) {
+		@include grid-generator(large, 12);
+	}
+	
+	@include breakpoint(xlarge) {
+		@include grid-generator(x-large, 12);
+	}
+	
+	@include breakpoint(xxlarge) {
+		@include grid-generator(xx-large, 12);
+	}
+}
+
+@include breakpoint(small) {
+	@include grid-generator(small, 12);
+}
+
+@include breakpoint(medium) {
+	@include grid-generator(medium, 12);
+}
+
+@include breakpoint(large) {
+	@include grid-generator(large, 12);
+}
+
+@include breakpoint(xlarge) {
+	@include grid-generator(x-large, 12);
+}
+
+@include breakpoint(xxlarge) {
+	@include grid-generator(xx-large, 12);
+}

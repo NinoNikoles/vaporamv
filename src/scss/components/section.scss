@@ -1,0 +1,58 @@
+section {
+    position: relative;
+    margin: rem-calc($large-space) 0;
+
+    @include breakpoint(medium) {
+        margin: rem-calc($xxlarge-space) 0;
+    }
+
+    &.gradient {
+        padding: rem-calc($xxlarge-space) 0;
+    }
+
+    &.blur {
+        text-shadow: 0 0 1rem #000;
+        top: 0;
+        width: 100%;
+        color: $white;
+        padding: {
+            top: rem-calc($xxlarge-space);
+            bottom: rem-calc($large-space);
+        }
+    }
+
+    &.blue-blur {
+        background: radial-gradient(circle, #cef6ff 0%, #24add1 100%);
+    }
+
+    &.green-blur {
+        background: radial-gradient(circle, #def7d3 0%, #43d022 100%);
+    }
+
+    &.red-blur {
+        background: radial-gradient(circle, #ffbcbc 0%, #e90000 100%);
+    }
+
+    &.purple-blur {
+        background: radial-gradient(circle, #dab4ff 0%, #9022cf 100%);
+    }
+
+    &.blue-blur,
+    &.green-blur,
+    &.red-blur,
+    &.purple-blur {
+        @include breakpoint(medium) {
+            padding: {
+                top: rem-calc($xxlarge-space*1.5);
+                bottom: rem-calc($xxlarge-space);
+            };
+        }
+        @include breakpoint(large) {
+            padding: {
+                top: rem-calc($xxlarge-space*2);
+                bottom: rem-calc($xxlarge-space*2);
+            }
+        }
+    }
+}
+

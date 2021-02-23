@@ -1,0 +1,45 @@
+.off-canvas {
+    background-color: $black;
+    hr {
+        margin-top: rem-calc($xxlarge-space);
+    }
+
+    .menu {
+        a {
+            color: $white;
+            font-size: rem-calc($font-size-medium);
+
+            &:hover,
+            &:focus,
+            &:active {
+                color: $gray;
+            }
+        }
+    }
+}
+
+button.close-button {
+    color: $white;
+    right: 0;
+    top: 0;
+    font-size: rem-calc($font-size-xlarge);
+    height: rem-calc($xxlarge-space);
+    width: rem-calc($xxlarge-space);
+    span {
+        display: inline-block;
+        height: rem-calc($xlarge-space);
+        width: rem-calc($xlarge-space);
+    }
+
+    &:hover,
+    &:focus,
+    &:active {
+        span {
+            color: $gray;
+        }
+    }
+}
+
+.js-off-canvas-overlay {
+    background-color: rgba(0, 0, 0, 0.5);
+}

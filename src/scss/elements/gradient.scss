@@ -1,0 +1,36 @@
+.gradient {
+    &-primary {
+        @include linear-gradient($primary-color,$secondary-color,hor);
+        &-vertical {
+            @include linear-gradient($primary-color,$secondary-color,ver);
+        }
+    }
+    &-secondary {
+        @include linear-gradient($pink,$secondary-color,hor);
+        &-vertical {
+            @include linear-gradient($pink,$secondary-color,ver);
+        }
+    }
+    &-green {
+        @include linear-gradient($green,$primary-color,hor);
+        &-vertical {
+            @include linear-gradient($green,$primary-color,ver);
+        }
+    }
+    &-primary,
+    &-green,
+    &-secondary {
+        &, &-vertical {
+            color: $white;
+            h1,
+            h2,
+            h3,
+            h4,
+            h5,
+            h6,
+            p {
+                color: $white;
+            }
+        }
+    }
+}

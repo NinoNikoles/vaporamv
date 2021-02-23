@@ -1,0 +1,30 @@
+.tabs {
+  .tabs-title {
+    float: none;
+    a {
+      color: $black;
+      text-align: center;
+
+      p {
+        margin-top: rem-calc($normal-space);
+        font-weight: 500;
+        font-size: rem-calc($font-size-normal);
+      }
+
+      i {
+        font-size: rem-calc($font-size-xxlarge);
+      }
+    }
+  }
+}
+
+.tabs-content {
+  .tabs-panel {
+    padding: {
+      top: rem-calc($normal-space);
+      right: 0;
+      bottom: 0;
+      left: 0;
+    }
+  }
+}

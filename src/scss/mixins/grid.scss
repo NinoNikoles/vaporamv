@@ -1,0 +1,13 @@
+@mixin grid-generator($size, $grid-columns) {
+	@for $i from 1 through $grid-columns {
+		&.#{$size}-#{$i} {
+			flex-direction: column;
+			flex-flow: column;
+			flex-grow: 1;
+			min-width: 0;
+			max-width: percentage($i / $grid-columns);
+			flex-basis: percentage($i / $grid-columns);
+			-webkit-box-flex: 0;
+		}
+	}
+}

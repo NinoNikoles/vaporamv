@@ -1,0 +1,21 @@
+header {
+    @include breakpoint(large) {
+        margin: rem-calc(55) 0 0 0;
+    }
+    section {
+        margin: 0;
+    }
+    h1 {
+        font-size: rem-calc(18);
+        @include breakpoint(large) {
+            font-size: rem-calc(21);
+        }
+
+    }
+    p {
+        font-size: rem-calc(27);
+        @include breakpoint(large) {
+            font-size: rem-calc(45);
+        }
+    }
+}

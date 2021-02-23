@@ -1,0 +1,115 @@
+.thumbnail,
+a.thumbnail,
+div.thumbnail {
+  border: none;
+  box-shadow: none;
+
+  img {
+    -webkit-filter: brightness(100%);
+    filter: brightness(100%);
+    transition: -webkit-filter .4s ease;
+    transition: filter .4s ease;
+    transition: filter .4s ease, -webkit-filter .4s ease;
+  }
+
+  &:hover,
+  &:focus,
+  &:active {
+    img {
+      -webkit-filter: brightness(125%);
+      filter: brightness(125%);
+    }
+  }
+}
+
+.song-cover-listing {
+  a.thumbnail,
+  div.thumbnail {
+    box-shadow: 0 rem-calc(4) rem-calc(8) 0 rgba(0, 0, 0, .2), 0 rem-calc(6) rem-calc(20) 0 rgba(0, 0, 0, .19);
+    cursor: pointer;
+    margin: 0;
+    padding: 3%;
+    position: relative;
+    overflow: hidden;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    transition: -webkit-transform .4s ease;
+    transition: transform .4s ease;
+    transition: transform .4s ease, -webkit-transform .4s ease;
+
+    img {
+      -webkit-filter: brightness(100%);
+      filter: brightness(100%);
+      transition: -webkit-filter .4s ease;
+      transition: filter .4s ease;
+      transition: filter .4s ease, -webkit-filter .4s ease;
+    }
+
+    .thumbnail-slide {
+      color: $white;
+      height: 100%;
+      left: 0;
+      padding: 3%;
+      position: absolute;
+      top: 0;
+      transition: width .4s ease;
+      transition-delay: .2s;
+      width: 0;
+
+      div {
+        background-color: rgba(0, 0, 0, .5);
+        height: 100%;
+        position: relative;
+        width: 100%;
+      }
+
+      .h4 {
+        opacity: 0;
+        text-align: center;
+        transition: opacity .4s ease;
+        transition-delay: 0s;
+        transform: translate(-50%, -50%);
+        position: absolute;
+        top: 50%;
+        left: 50%;
+      }
+    }
+
+    &:hover,
+    &:focus,
+    &:active {
+      box-shadow: 0 rem-calc(4) rem-calc(8) 0 rgba(0, 0, 0, .2), 0 rem-calc(6) rem-calc(20) 0 rgba(0, 0, 0, .19);
+      cursor: pointer;
+      transform: scale(1.1);
+      outline: 0;
+
+      img {
+        filter: brightness(125%);
+      }
+
+      .thumbnail-slide {
+        transition: width .4s ease;
+        transition-delay: 0s;
+        width: 100%;
+
+        .h4 {
+          opacity: 1;
+          transition: opacity .4s ease;
+          transition-delay: .2s;
+        }
+      }
+    }
+  }
+}
+
+a.thumbnail,
+div.thumbnail {
+  padding: 8%;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  transition: -webkit-transform .4s ease;
+  transition: transform .4s ease;
+  transition: transform .4s ease,-webkit-transform .4s ease;
+}
+
+

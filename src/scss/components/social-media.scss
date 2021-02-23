@@ -1,0 +1,47 @@
+.social-media {
+  text-align: center;
+
+  i {
+    font-size: rem-calc(50);
+    @include breakpoint(medium) {
+      font-size: rem-calc(100);
+    }
+  }
+
+  .social-media-container {
+    color: $white;
+    display: block;
+    position: relative;
+
+    &:hover,
+    &:focus,
+    &:active {
+      .fa-soundcloud {
+        color: #a55500;
+      }
+      .fa-youtube {
+        color: #aa0108;
+      }
+    }
+  }
+
+  .svg-inline--fa {
+    height: rem-calc(52);
+    width: rem-calc($xxlarge-space);
+
+    @include breakpoint(medium) {
+      height: rem-calc(52*2);
+      width: rem-calc($xxlarge-space*2);
+    }
+  }
+
+  .fa-soundcloud {
+    color: #f50;
+    transition: color .4s ease-out;
+  }
+
+  .fa-youtube {
+    color: #fe0108;
+    transition: color .4s ease-out;
+  }
+}

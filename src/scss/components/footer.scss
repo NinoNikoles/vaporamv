@@ -1,0 +1,105 @@
+.footer-main {
+  text-transform: uppercase;
+  background-color: $white;
+  border-top: rem-calc(1) solid $black;
+  color: $black;
+  padding: {
+    top: rem-calc($normal-space);
+    bottom: rem-calc($normal-space);
+  }
+
+  ul {
+    font-size: rem-calc($font-size-normal);
+    list-style-type: none;
+    margin: 0;
+    text-align: center;
+    width: 100%;
+
+    @include breakpoint(medium) {
+      display: flex;
+      text-align: left;
+    }
+
+    li {
+      margin: {
+        top: rem-calc($normal-space);
+        bottom: rem-calc($normal-space);
+      }
+
+      @include breakpoint(medium) {
+        margin: 0;
+      }
+
+      a {
+        color: $black;
+        font-weight: 500;
+        line: {
+          height: 1.8;
+        }
+      }
+    }
+  }
+
+  .company {
+    @include breakpoint(medium) {
+      border: {
+        right: rem-calc(2) solid $black;
+      }
+      padding: {
+        right: rem-calc($normal-space);
+      }
+      margin: {
+        right: rem-calc($small-space);
+      }
+    }
+  }
+
+  .footer-navigation {
+    display: inline-flex;
+    margin: 0;
+    width: auto;
+
+    li {
+      display: flex;
+      margin: {
+        top: 0;
+        right: rem-calc($normal-space);
+        bottom: 0;
+        left: rem-calc($normal-space);
+      };
+
+      @include breakpoint(medium) {
+        padding: {
+          right: rem-calc($small-space);
+          left: rem-calc($small-space);
+        }
+        margin: 0;
+      }
+    }
+  }
+
+  .lang-change {
+    display: flex;
+    flex-grow: 1;
+    justify-content: center;
+
+    @include breakpoint(medium) {
+      justify-content: flex-end;
+    }
+  }
+
+  .lang-change-label {
+    font-size: rem-calc($font-size-normal);
+    font-weight: 500;
+  }
+
+  .lang-change-select {
+    border: none;
+    font-size: rem-calc($font-size-normal);
+    font-weight: 500;
+    margin-bottom: 0;
+    padding: 0 rem-calc(25) 0 rem-calc($small-space);
+    text-transform: uppercase;
+    width: auto;
+  }
+}

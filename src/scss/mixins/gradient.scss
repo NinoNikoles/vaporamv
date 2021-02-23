@@ -1,0 +1,19 @@
+$hor: 135;
+$ver: 180;
+
+@mixin linear-gradient($firstColor,$secondColor, $deg) {
+    @if $deg == hor {
+        background: linear-gradient(
+            $hor+deg,
+            $firstColor 10%,
+            $secondColor 90%
+        );
+    }
+    @if $deg == ver {
+        background: linear-gradient(
+            $ver+deg,
+            $firstColor 10%,
+            $secondColor 90%
+        );
+    }
+}

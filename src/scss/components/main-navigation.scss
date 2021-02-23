@@ -1,0 +1,30 @@
+.nav-main {
+  display: inline-block;
+
+  .menu {
+    background: none;
+    .menu-item {
+      padding: {
+        top: 0;
+        right: rem-calc($small-space);
+        bottom: 0;
+        left: rem-calc($small-space);
+      }
+
+      a {
+        color: $white;
+        font: {
+          size: rem-calc($font-size-medium);
+        }
+        text-shadow: 0 0 rem-calc($normal-space) $black;
+        padding: rem-calc($small-space);
+        &.is-active,
+        &:hover,
+        &:focus,
+        &:active {
+          background-color: rgba(0,0,0,.8);
+        }
+      }
+    }
+  }
+}

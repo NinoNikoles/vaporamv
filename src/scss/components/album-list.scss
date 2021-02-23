@@ -1,0 +1,59 @@
+.album-list {
+  div.thumbnail {
+    padding: 0;
+    .video-link {
+      color: $black;
+      display: inline-block;
+
+      img {
+        width: 100%;
+      }
+
+      .song-info {
+        @include breakpoint(small) {
+          padding-left: rem-calc($normal-space);
+        }
+        @include breakpoint(medium) {
+          padding-left: 0;
+        }
+        @include breakpoint(large) {
+          padding-left: rem-calc($normal-space);
+        }
+      }
+
+      .song-info-list {
+        list-style-type: none;
+        margin: 0;
+
+        .datum {
+          color: $gray;
+        }
+      }
+
+      .video-info-list {
+        list-style-type: none;
+        margin: 0;
+
+        .datum {
+          color: $gray;
+          font-size: rem-calc($font-size-small);
+        }
+
+        .album {
+          font-size: rem-calc($font-size-small);
+        }
+      }
+    }
+    &.next-video {
+      h3 {
+        font-size: rem-calc($font-size-normal);
+      }
+
+      .song-info {
+        padding: {
+          left: rem-calc($normal-space);
+        }
+      }
+    }
+  }
+}

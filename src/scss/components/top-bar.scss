@@ -1,0 +1,26 @@
+.top-bar {
+  background: 0 0;
+  margin: 0 auto;
+  max-width: rem-calc(1200);
+  left: 50%;
+  padding: {
+    top: 0;
+    right: rem-calc($normal-space);
+    bottom: 0;
+    left: rem-calc($normal-space);
+  }
+  top: 0;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  width: 100%;
+  z-index: 1;
+  position: absolute;
+
+  .logo {
+    display: inline-block;
+    img {
+      height: rem-calc(76);
+      width: auto;
+    }
+  }
+}

@@ -1,0 +1,31 @@
+.video {
+  margin-bottom: rem-calc($medium-space);
+  width: 100%;
+
+  h2 {
+    font-size: rem-calc($font-size-medium);
+    font-weight: 500;
+    margin: {
+      top: rem-calc($normal-space);
+      bottom: rem-calc($normal-space);
+    }
+  }
+
+  h2,
+  h3 {
+    color: $black;
+  }
+
+  .video-info-list {
+    border: {
+      bottom: rem-calc(1) solid $gray;;
+    }
+    color: $gray;
+    font-weight: normal;
+    list-style-type: none;
+    padding: {
+      bottom: rem-calc($small-space);
+    }
+    margin: 0;
+  }
+}
